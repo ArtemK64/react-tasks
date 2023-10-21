@@ -8,7 +8,6 @@ export const Layout = () => {
       <div>
         <Box
           p={4}
-          // color={"red.900"}
           style={{
             borderBottom: "1px solid #eee",
           }}
@@ -26,11 +25,9 @@ export const Layout = () => {
           </Stack>
         </Box>
       </div>
-      {/* Outlet - выводит все дочерние элементы роутингов */}
       <div>
         <Outlet />
       </div>
-      <div>footer</div>
     </>
   );
 };

@@ -11,12 +11,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Provider store={store}>
     <ChakraProvider>
-      {/* BrowserRouter - обязательно используется для роутингов, им требуется обернуть весь проект */}
       <BrowserRouter>
         <App />
       </BrowserRouter>
     </ChakraProvider>
   </Provider>
 );
-// <React.StrictMode>
-// </React.StrictMode>

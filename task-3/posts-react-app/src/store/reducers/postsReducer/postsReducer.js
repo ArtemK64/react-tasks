@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  isLoading: false,
+  isLoadingPosts: false,
   posts: [],
 };
 
@@ -12,7 +12,7 @@ export const postsSlice = createSlice({
     addPostsToStore: (state, actions) => {
       const { posts, loaded } = actions.payload;
       state.posts = posts;
-      state.isLoading = loaded;
+      state.isLoadingPosts = loaded;
     },
   },
 });

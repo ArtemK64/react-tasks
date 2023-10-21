@@ -19,7 +19,6 @@ export const MainPage = () => {
 
   const handleMethod = () => {
     navigation("/admin", {
-      // state - зарезервированное наименование, для передачи данных на иную страницу
       state: {
         value: 10,
       },
